@@ -170,6 +170,49 @@ img{
 .overlay-box h2 {
     margin-bottom: 10px; /* Optional: Add space below the heading */
 }
+.box-contant{
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+    padding: 30px ;
+
+}
+/*-----Section: Footer-------*/
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+}
+footer h3{
+    margin: 0;
+}
+footer h3,
+footer h4{
+    color: var(--white-shade-1);
+    text-align: center;
+}
+footer .row{
+    margin-bottom: 6rem;
+}
+.footer-about{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid white;
+}
+.social-link{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.social-links a{
+    font-size: 3rem;
+    text-decoration: none;
+    color: var(--white-shade-1);
+}
+footer p{
+    text-align: center;
+}
 
 /*     Responsive website     */
 @media screen and (max-width: 600px) {

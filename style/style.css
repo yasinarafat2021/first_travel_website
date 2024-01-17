@@ -1,0 +1,131 @@
+header{
+    background-image: url("Group 13 (1) (1) (1).png");
+    background-position: center;
+    width: 100%;
+    height: 600px;
+}
+body {
+    margin: 0;
+}
+
+.cover-container {
+    position: relative;
+    text-align: center;
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+nav .home{
+    position:fixed;
+    
+    
+}
+.text-light-gray{
+    color: #727272;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#232323;
+}
+nav ul{
+    list-style: none;
+    display:flex;
+    gap:3rem;
+    color: #00a8fa;
+}
+nav li{
+    list-style: none;
+    display: flex;
+}
+nav a{
+    font-size:var(--heading-font-size-3);
+    list-style: none;
+}
+nav a#logo{
+    color: var(--black-shade-1);
+    font-weight: 700;
+}
+nav ul a{
+    color:#232323;
+    text-decoration: none;
+}
+.logo span{
+    color: #FF5400;
+}
+.search-container input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    background: #FF5400;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+    background-image: cover;
+}
+.container span{
+    color: red;
+}
+.section-container {
+    max-width: 1200px; /* Optional: Set a maximum width for the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+}
+
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Optional: Add margin between sections */
+}
+.text-column h2{
+    color: #232323;
+}
+
+.text-column {
+    width: 45%; /* Adjust the width of the text column */
+    color: #727272;
+}
+
+.image-column {
+    width: 45%; /* Adjust the width of the image column */
+}
+
+.image-column img {
+    width: 100%; /* Make the image fill its container */
+    height: auto;
+}
+
+
+/*     Responsive website     */
+@media screen and (max-width: 768px) {
+    /* Responsive styles for smaller screens */
+    .cover-image {
+        height: 500px; /* Adjust the height of the cover image */
+    }
+
+    .logo {
+        width: 80px; /* Adjust the width of your logo for larger screens */
+    }
+}
+    .two-column-container {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .text-column,
+    .image-column {
+        width: 100%; /* Full width for each column on smaller screens */
+    }
+}

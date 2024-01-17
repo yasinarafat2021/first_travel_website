@@ -33,7 +33,10 @@ nav .home{
     
 }
 .text-light-gray{
-    color: #727272;
+    color: #5A5A5D;
+    font-size: 13px;
+
+
 }
 nav{
     display: flex;
@@ -65,52 +68,111 @@ nav ul a{
 }
 .logo span{
     color: #FF5400;
+} 
+.logo{
+    font-size: 36px;
+}
+.centered-text h1{
+    font-size: 50px;
 }
 .search-container input[type="submit"] {
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     background: #FF5400;
+    font-size: 16px;
 }
-.container img{
-    width: 100%;
-    height: 100%;
-    background-image: cover;
+.search-container{
+    border-radius: 3px;
+    background: #FFF;
 }
-.container span{
-    color: red;
-}
-.section-container {
-    max-width: 1200px; /* Optional: Set a maximum width for the content */
-    margin: 0 auto; /* Center the container */
-    padding: 20px;
-}
-
-.two-column-container {
+.featutre{
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Optional: Add margin between sections */
 }
-.text-column h2{
-    color: #232323;
+.feature-img{
+    width: 540px;
+    height: 500px;
 }
+.section-title{
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+}
+.text-light-grayes p{
+    text-align: center;
+    font-size: 10px;
+}
+.section-title{
+    color: #181818;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+.section-description{
+    color: #757575;
+    text-align: center;
+    font-size: 14px;
+}
+.about{
+    margin-top: 30px;
+}
+img{
+    height: 100%;
+    width: 100%;
 
-.text-column {
-    width: 45%; /* Adjust the width of the text column */
-    color: #727272;
 }
-
-.image-column {
-    width: 45%; /* Adjust the width of the image column */
+.row {
+    display: flex;
+    gap: 7px;
+    margin-top: 5px;
+    
 }
-
-.image-column img {
-    width: 100%; /* Make the image fill its container */
+.container{
+    display: flex;
+    gap: 5px;
+}
+.box{
+    background-color: rgba(251, 181, 99, 0.05);
+    padding: 10px;
+    border-radius: 20px;
+}
+.box-1{
+    background-color: rgb(226, 253, 253);
+    border-radius: 5px;
+}
+.box-2{
+    background-color: rgb(224, 233, 233);
+    border-radius: 5px;
+}
+/*     img   */
+.image-container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.image-container img {
+    width: 100%;
     height: auto;
+    display: block;
 }
 
+.overlay-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-box h2 {
+    margin-bottom: 10px; /* Optional: Add space below the heading */
+}
 
 /*     Responsive website     */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     /* Responsive styles for smaller screens */
     .cover-image {
         height: 500px; /* Adjust the height of the cover image */
@@ -128,4 +190,4 @@ nav ul a{
     .image-column {
         width: 100%; /* Full width for each column on smaller screens */
     }
-}
+    
